@@ -1,0 +1,540 @@
+/* styles.css */
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0;
+}
+
+.images {
+    display: flex;
+    width: 40%;
+    background-size: cover;
+    /* max-width: 1200px; */
+}
+
+.left-image , .right-image {
+    width: 50%;
+    height: 100px;
+    
+
+
+}
+ .navbar h2 {
+    font-family: elephand;
+    font-size: 40px;
+    margin-top: 1px;
+    margin-left: 1px;
+ }
+
+
+.navbar {
+    width: 100%;    
+    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
+    position: fixed;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1000;
+    /* border: 1px solid black; */
+    /* animation: slideDown 0.5s ease-out; */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    padding-left: 10%;
+    margin-top: 3%;
+    height: 10%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px ;
+    text-decoration: none;
+    position: relative;
+    gap: 40px;
+    
+    
+}
+
+.navbar li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+
+/* #data-imag img {
+    width: 80%;
+    margin-left: 12%; 
+
+} */
+ .data-text p {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    
+ }
+
+.data-text {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    font-family: sans-serif;
+    font-style: italic;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.history-img img {
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 8%;
+}
+.data1-img  img{
+    width: 100%;
+    margin-left: 14%;
+    margin-top: 4%;
+}
+.data-img p{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5%;
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.img-2019 img {
+    width: 100%;
+    margin-left: 14%;
+    margin-top: 4%;
+}
+
+.img-2019 {
+    width: 80%;
+}
+
+.img-2019 p {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5%;
+    width: 80%;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 5%;
+   
+}
+.img-2021 img {
+    width: 100%;
+    margin-left: 13%;
+    margin-top: 4%;
+}
+
+.img-2021 {
+    width: 80%;
+}
+
+.img-2021 p {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5%;
+    width: 80%;
+    align-items: center;
+    margin-left: 25%;
+}
+
+/* //////////////////////////////////////////////doctor cards start////////////////////////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+} */
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 15px;
+    padding: 100px 50px;
+    background : transparent;
+    /* margin-top: 3%; */
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover {
+    height: 550px;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 1000px;
+}
+
+.container .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .content p {
+    color: #333;
+}
+
+.container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.container .card .content a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .container .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .container .card .content a {
+        font-size: 0.9rem;
+    }
+}
+
+/* ////////////////////////////////////////////////doctor cards and///////////////////////////////////////////// */
+
+@keyframes slideDown {
+    from { top: -50px; }
+    to { top: 0; }
+}
+
+.middle-image-section {
+    text-align: center;
+    padding: 20px;
+    /* background-color: lightgray; */
+
+}
+
+.middle-image {
+    width: 100%;
+    max-width: 220vh;
+    height: auto;
+    
+}
+
+main {
+    padding: 100px 20px 20px 20px; /* Adjust padding for navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-content {
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+
+@media (max-width: 800px) {
+    .navbar {
+        height: 50%;
+        background: transparent;
+        text-align: center;
+        top: 30%;
+        
+       
+    }
+    .navbar h2 {
+        text-align: center;
+        
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 25%;
+       
+        
+    }
+   
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-image, .right-image {
+        width: 100%;
+    }
+
+    .middle-image-section .middle-image {
+        width: 70%;
+        height: 48vh;
+        margin-right: 2%;
+    }
+    
+
+    .text-content {
+        padding: 10px;
+        margin-top: 20%;
+    }
+    .text-content h1 {
+        font-size: 20px;
+    }
+    .text-content p {
+        font-size: 10px;
+        
+        
+    }
+
+    .data-imag img {
+        width: 75%;
+        margin-left: 9%;
+        align-items: center;
+    }
+    .data1-imag img {
+        width: 10%;
+        margin-left: 2%;
+        align-items: center;
+    }
+    .data-text {
+        width: 70%;
+        text-align: center;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    .history-img img {
+        width: 80%;
+        align-items: center;
+        margin-left: 9%;
+    }
+    .data-img img{
+        width: 40%;
+        
+        align-items: center;
+    }
+    .img-2019 img {
+        width: 100%;
+        margin-left: 17%;
+        align-items: center;
+        margin-left: 10%;
+
+    }
+    .img-2019 p {
+        /* width: 80%; */
+        text-align: center;
+        align-items: center;
+    }
+    .img-2021 img {
+        width: 100%;
+        margin-left: 13%;
+    }
+    .img-2021 p {
+        text-align: center;
+        align-items: center;
+    }
+    
+}
+
+
+/* ///////////////////////////////////////////////////////////history-vacination///////////////////////////////////////////////////// */
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin-left: 9%;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 23%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 6%;
+    height: 50%;
+
+    
+}
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.card-text {
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover img {
+    transform: translateY(-100%);
+}
+.card:hover .card-text {
+    transform: translateY(-100%);
+}
+.history-vacination h4 {
+   text-align: center;
+    /* border-bottom: 2px solid black; */
+    margin-top: 6%;
+    font-family: elephand;
+    font-weight: bolder;
+    font-size: 5vh;
+
+}
+@media (max-width: 768px) {
+    .card {
+        width: 48%;
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    .history-vacination h4 {
+    
+        border-bottom: 2px solid black;
+        margin-top: 5%;
+        font-size: 100%;
+        font-family: elephand;
+        font-weight: bolder;
+    }
+}

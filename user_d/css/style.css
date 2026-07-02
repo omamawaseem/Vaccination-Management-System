@@ -1,0 +1,245 @@
+
+label{
+    color:black;
+}
+body {
+    background: url(../Imges/2.jpg)no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: �100vh;
+}
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+        max-height: 40px; /* You can adjust this as needed */
+        width: auto;
+        margin-right: 10px;
+    }
+/*@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        text-align: center;*/ /* Center align the logos */
+        /*margin-bottom: 20px;*/ /* Add some space between logos */
+    /*}
+
+        .logo img {
+            max-width: 100%;*/ /* Make sure images don't exceed their container */
+            /*height: auto;*/ /* Maintain aspect ratio of images */
+        /*}
+
+    .col-6 {
+        flex-basis: 50%;*/ /* Make columns take up 50% width in this range */
+    /*}
+
+    .col-0 {
+        display: none;*/ /* Hide the third column in this�range�*/
+        ��
+    /*}
+}*/
+
+
+
+
+    .header-main {
+        padding: 2em 5em;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #c6d0d2de !important;
+        background-color: rgba(198, 208, 210, 0.8);
+        border-radius: 60px;
+        border-right: 3px solid #ea2e2e;
+        border-left: 3px solid #ea2e2e;
+        margin-top: 10px;
+    }
+
+        .header-main h1 {
+            font-size: 1.5em;
+            color: #F00;
+            text-align: center;
+            padding-bottom: 0.8em;
+            text-shadow: 0px 0px #000;
+        }
+
+    .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+        vertical-align: middle !important;
+    }
+
+    .DrpFieldCourse {
+        width: 84%;
+        padding: 0px 0px 15px 5px;
+        font-size: 12px;
+        background: #ea2e2e;
+        background-size: 18px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        outline: none;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+        .DrpFieldCourse select {
+            width: 84%;
+            padding: 0px 0px 15px 5px;
+            font-size: 12px;
+            background-color: #ea2e2e;
+            background-size: 18px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            outline: none;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+            .DrpFieldCourse select:focus {
+                outline: none;
+                background-color: #763c31;
+            }
+
+    .textboxData {
+        padding: 0.4em 1em;
+        margin: 0em 0em 0em 0;
+        color: #fff;
+        width: 10%;
+        background: transparent;
+        border: 1px solid #d9d9ce;
+        font-size: 0.85em;
+        outline: none;
+        letter-spacing: 1px;
+    }
+
+    .lineStyle {
+        margin: 0 0 1em;
+        border-bottom: 1px solid #ececec;
+    }
+
+    input[type=radio] {
+        /*border: 0px;
+	width: 4%;
+	height: 1em;
+	margin: 0px !important;*/
+    }
+
+    .headerText {
+        font-size: 10px !important;
+    }
+
+    textarea {
+        color: #333 !important;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) {
+        background-color: transparent !important;
+    }
+
+    .w3layouts-newsletter {
+        color: #3c4e4f !important;
+        font-size: 12pt !important;
+        width: 25% !important;
+        font-weight: 500 !important;
+        border: 1px solid #ea2e2e !important;
+        background: #d1d1d1!important;
+        border-radius: 30px !important;
+        padding: 8px 0px !important;
+        outline: none !important;
+        cursor: pointer !important;
+        transition: 0.5s all !important;
+        -webkit-transition: 0.5s all !important;
+        -moz-transition: 0.5s all !important;
+        -ms-transition: 0.5s all !important;
+        -o-transition: 0.5s all !important;
+        letter-spacing: 1px !important;
+        font-family: 'Poiret One', cursive !important;
+    }
+
+        .w3layouts-newsletter:hover {
+            background: none !important;
+            border: 1px solid #ea2e2e !important;
+            transition: 0.5s all !important;
+            -webkit-transition: 0.5s all !important;
+            -moz-transition: 0.5s all !important;
+            -ms-transition: 0.5s all !important;
+            -o-transition: 0.5s all !important;
+        }
+
+    .copyright {
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+        .copyright p {
+            font-size: 8pt;
+            font-weight: 400;
+            color: #505050;
+            word-spacing: .2em;
+        }
+
+            .copyright p a {
+                font-size: 9px;
+                font-weight: 400;
+                color: #505050;
+            }
+
+                .copyright p a:hover {
+                    color: #34a853;
+                    text-decoration: none;
+                }
+
+    .NormalText {
+        font-family: tahoma;
+        font-size: 11pt;
+        color: white;
+    }
+
+    .NormalTextHeader {
+        font-family: tahoma;
+        font-size: 11pt;
+        color: #505050 !important;
+        font-weight: bold;
+    }
+
+    .input_hidden {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .selected {
+        background-color: #ccc;
+    }
+
+    #sites label {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #sites {
+        text-align: center;
+    }
+
+        #sites label:hover {
+            background-color: #efefef;
+        }
+
+        #sites label img {
+            padding: 3px;
+        }
+
+    .imgStyle {
+        width: 100px;
+    }
+
+    .txtStyle {
+        width: 100% !important;
+    }
