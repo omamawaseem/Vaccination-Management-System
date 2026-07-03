@@ -1,0 +1,29 @@
+# XAMPP
+xampp/
+
+# Logs
+*.log
+
+# Cache
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+# Environment Files
+.env
+
+# Temporary Files
+*.tmp
+*.bak
+
+# Composer
+vendor/
+
+# Node
+node_modules/
